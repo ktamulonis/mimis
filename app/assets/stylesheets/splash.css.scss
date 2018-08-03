@@ -6,8 +6,8 @@ $headings-font-weight: 300;
 $brand-primary: darken(#bc39ff, 6.5%);
 
 $navbar-default-bg: white;
-$navbar-default-border: white;
-$navbar-default-link-color: black;
+$navbar-default-border: #eabd36;
+$navbar-default-link-color: #eabd36;
 
 $navbar-default-link-hover-bg: lighten( $brand-primary, 50% );
 $navbar-default-link-active-bg: lighten( $brand-primary, 30% );
@@ -139,3 +139,30 @@ body.splash {
     color: white;
   }
 }
+.colors{
+      animation: colorchange 50s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s infinite; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background-color:rgb(188,57,255);}
+      25%  {background-color:rgba(234,189,54, 0);}
+      50%  {background-color:rgb(176,193,68);}
+      75%  {background-color:rgb(103,34,48);}
+      100% {background-color:rgba(254,251,251, 0);}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background-color:rgb(188,57,255);}
+      25%  {background-color:rgba(234,189,54, 0);}
+      50%  {background-color:rgb(176,193,68);}
+      75%  {background-color:rgb(103,34,48);}
+      100% {background-color:rgb, (254,251,251, 0);}
+    }
+.small-icon{
+  height:60px;
+  width:100px;
+  }

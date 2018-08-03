@@ -8,6 +8,7 @@
 
     %meta{ :name => 'description', :content => '' }/
     %meta{ :name => 'viewport', :content => 'width=device-width' }/
+    %link{:href => "https://s3.amazonaws.com/mimistheater/small-logo.png", :rel => "shortcut icon", :type => "image/x-icon"}/
 
     = stylesheet_link_tag 'splash', :media => nil
 
@@ -24,11 +25,12 @@
     %header.slideup.affix-top{ data: { spy: "affix", "offset-top": 10 } }
       = navbar id: "navbar", fluid: true, position: :top, padding: 0 do
         = vertical do
-          = link_to "Home", "#top"
+          = link_to "#top" do
+            mimi's community theater
         = horizontal do
           = nav class: 'navbar-right' do
-            = link_to "(407) 864-5029", "#about"
-            = link_to "Features", "#features"
+            = link_to "(407) 864-5029", "#"
+            = link_to "About", "#about"
             = link_to "Contact", "#contact"
 
     = yield

@@ -166,3 +166,12 @@ body.splash {
   height:60px;
   width:100px;
   }
+  .flex{
+    display: flex; 
+    justify-content:center;
+    align-items:center;
+  }
+  .corner-2{
+    border-radius:4px;
+    overflow:hidden;
+  }

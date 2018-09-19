@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, :controllers => { }
   get 'about/privacy'
   post '/signup' => 'splash#signup', as: :splash_signup
   get '/splash' => 'splash#index'

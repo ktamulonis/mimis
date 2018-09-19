@@ -7,4 +7,8 @@ class Performance < ApplicationRecord
   	self.slug = self.name.downcase.gsub(" ", "_").gsub(',',"").gsub("#","").gsub("[^a-z0-9\s-]", "")
   end
 
+  def to_param
+    slug
+  end
+
 end
